@@ -1,9 +1,10 @@
 ﻿using Calendario.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Calendario.Data
 {
-    public class ApplicationContext : DbContext
+    public class ApplicationContext : IdentityDbContext
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base (options) 
         { 
@@ -14,10 +15,10 @@ namespace Calendario.Data
         //    optionsBuilder.UseSqlServer("Data source=(localdb)\\MSSQLLocalDB;Initial Catalog=Calendario;Integrated Security=true");
         //}
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Teste>();
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Teste>();
+        //}
 
         public DbSet<Teste> Testes { get; set; }
     }
