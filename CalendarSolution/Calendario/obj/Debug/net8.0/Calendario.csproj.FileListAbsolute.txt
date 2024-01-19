@@ -280,3 +280,4 @@ C:\Users\Lais\Documents\Projetos\Calendario\CalendarSolution\Calendario\bin\Debu
 C:\Users\Lais\Documents\Projetos\Calendario\CalendarSolution\Calendario\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Lais\Documents\Projetos\Calendario\CalendarSolution\Calendario\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Lais\Documents\Projetos\Calendario\CalendarSolution\Calendario\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Lais\Documents\Projetos\Calendario\CalendarSolution\Calendario\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
