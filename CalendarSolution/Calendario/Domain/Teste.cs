@@ -9,8 +9,7 @@ namespace Calendario.Domain
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        public required string Nome { get; set; }
+        public string? Nome { get; set; }
 
         public int? Quantidade { get; set; }
     }
