@@ -25,9 +25,14 @@ namespace Calendario.Controllers
         }
 
         [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult<Teste>> GetTeste(int id)
         {
             var teste = await _context.Testes.FindAsync(id);
+
+            if(teste == null) return NotFound();
 
             return teste;
         }
@@ -41,6 +46,7 @@ namespace Calendario.Controllers
             {
                 //return BadRequest(ModelState);
                 //return ValidationProblem(ModelState);
+
                 return ValidationProblem(new ValidationProblemDetails(ModelState)
                 {
                     Title = "Um ou mais erros de validação ocorreram!",
@@ -58,21 +64,51 @@ namespace Calendario.Controllers
         [ProducesDefaultResponseType]
         public async Task<IActionResult> PutTeste(int id, Teste teste)
         {
-            _context.Testes.Update(teste);  
-            await _context.SaveChangesAsync();
+            if(id != teste.Id) return BadRequest();
+            if (!ModelState.IsValid) return ValidationProblem(ModelState);
+
+            //_context.Testes.Update(teste);  
+            _context.Entry(teste).State = EntityState.Modified; 
+            
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException) 
+            {
+                if (!TesteExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
 
             return NoContent();
         }
 
         [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<IActionResult> DeleteTeste(int id)
         {
             var teste = await _context.Testes.FindAsync(id);
+
+            if(teste == null) return NotFound();
 
             _context.Testes.Remove(teste);
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private bool TesteExists(int id)
+        {
+            return (_context.Testes?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
         #region Inicial
