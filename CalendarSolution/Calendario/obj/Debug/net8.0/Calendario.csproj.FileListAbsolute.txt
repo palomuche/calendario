@@ -273,3 +273,4 @@ C:\Paulinho\Projetos\CalendarSolution\Calendario\bin\Debug\net8.0\runtimes\win\l
 C:\Paulinho\Projetos\CalendarSolution\Calendario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Paulinho\Projetos\CalendarSolution\Calendario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Paulinho\Projetos\CalendarSolution\Calendario\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Lais\Documents\Projetos\Calendario\CalendarSolution\Calendario\bin\Debug\net8.0\Newtonsoft.Json.dll

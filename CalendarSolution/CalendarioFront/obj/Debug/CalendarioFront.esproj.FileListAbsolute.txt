@@ -1,1 +1,2 @@
 C:\Paulinho\Projetos\CalendarSolution\CalendarioFront\obj\Debug\CalendarioFront.esproj.CoreCompileInputs.cache
+C:\Users\Lais\Documents\Projetos\Calendario\CalendarSolution\CalendarioFront\obj\Debug\CalendarioFront.esproj.CoreCompileInputs.cache
