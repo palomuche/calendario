@@ -9,7 +9,7 @@ namespace Calendario.Data
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data source=(localdb)\\mssqllocaldb;Initial Catalog=Calendario;Integrated Security=true");
+            optionsBuilder.UseSqlServer("Data source=(localdb)\\MSSQLLocalDB;Initial Catalog=Calendario;Integrated Security=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
