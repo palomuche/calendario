@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Paulinho\\Projetos\\CalendarSolution\\Calendario\\Calendario.csproj": {}
+    "C:\\Users\\Lais\\Documents\\Projetos\\Calendario\\CalendarSolution\\Calendario\\Calendario.csproj": {}
   },
   "projects": {
-    "C:\\Paulinho\\Projetos\\CalendarSolution\\Calendario\\Calendario.csproj": {
+    "C:\\Users\\Lais\\Documents\\Projetos\\Calendario\\CalendarSolution\\Calendario\\Calendario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Paulinho\\Projetos\\CalendarSolution\\Calendario\\Calendario.csproj",
+        "projectUniqueName": "C:\\Users\\Lais\\Documents\\Projetos\\Calendario\\CalendarSolution\\Calendario\\Calendario.csproj",
         "projectName": "Calendario",
-        "projectPath": "C:\\Paulinho\\Projetos\\CalendarSolution\\Calendario\\Calendario.csproj",
-        "packagesPath": "C:\\Users\\pauli\\.nuget\\packages\\",
-        "outputPath": "C:\\Paulinho\\Projetos\\CalendarSolution\\Calendario\\obj\\",
+        "projectPath": "C:\\Users\\Lais\\Documents\\Projetos\\Calendario\\CalendarSolution\\Calendario\\Calendario.csproj",
+        "packagesPath": "C:\\Users\\Lais\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lais\\Documents\\Projetos\\Calendario\\CalendarSolution\\Calendario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pauli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lais\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
