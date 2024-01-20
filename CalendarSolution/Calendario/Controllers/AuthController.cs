@@ -44,7 +44,7 @@ namespace Calendario.Controllers
             {
                 await _signInManager.SignInAsync(user, false);
                 //return Ok(await GerarJwt(user.Email));
-                return Ok();
+                //return Ok();
                 return Ok(GerarJwt());
             }
 
