@@ -3,9 +3,11 @@ using Calendario.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Calendario.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/teste")]
     public class TesteController : ControllerBase
